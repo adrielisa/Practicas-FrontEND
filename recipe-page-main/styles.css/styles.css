@@ -50,7 +50,7 @@ body {
 
 /** Globals **/
 
-h2, h3 {
+h1, h2, h3 {
     font-family: var(--secundaryFont);
 }
 
@@ -73,21 +73,41 @@ h4{
 
 .container__image{
     border-radius: 1rem;
-    margin-top: -10rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 5%;
+    
 }
+
+.container--time{
+    background-color: var(--rose50);
+    border-radius: 1rem;
+    width: 100%;
+    margin: 2rem 0rem;
+    padding: 1%;
+}
+
+.container--time__tittle{
+    margin-left: 5%;
+}
+
 
 @media (min-width: 768px) {
     .container{
-        background-color: white; /* Color blanco del contenedor */
     padding: 20px;
     border-radius: 15px; /* Bordes redondeados */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    max-width: 400px; /* Ancho máximo del contenedor */
+    max-width: 50rem; /* Ancho máximo del contenedor */
     width: 100%;
     }
 
     .container__image{
         max-width: 100%;
+        margin-top: 55%;
+    }
+
+    .container--time{
+
     }
 
     .attribution{
