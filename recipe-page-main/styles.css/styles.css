@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Young Serif';
+    src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/outfit/static/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --primaryFont: 'Outfit', sans-serif;
+    --secundaryFont: 'Young Serif', serif;
+    --white: hsl(0, 0%, 100%);
+    --stone100: hsl(30, 54%, 90%);
+    --stone150: hsl(30, 18%, 87%);
+    --stone600: hsl(30, 10%, 34%);
+    --stone900: hsl(24, 5%, 18%);
+    --brown800: hsl(14, 45%, 36%);
+    --rose800: hsl(332, 51%, 32%);
+    --rose50: hsl(330, 100%, 98%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--secundaryFont);
+    margin: 0;
+    font-size: 1.6rem;
+    background-color: var(--stone100);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--primaryFont);
+
+
+}
+
+/** Globals **/
+
+h2, h3 {
+    font-family: var(--secundaryFont);
+}
+
+h3{
+    color: var(--brown800);
+}
+
+h4{
+    color: var(--rose800);
+}
+
+
+/** Header **/
+
+/** Body**/
+
+.container{
+    background-color: var(--white);
+}
+
+.container__image{
+    border-radius: 1rem;
+    margin-top: -10rem;
+}
+
+@media (min-width: 768px) {
+    .container{
+        background-color: white; /* Color blanco del contenedor */
+    padding: 20px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 400px; /* Ancho máximo del contenedor */
+    width: 100%;
+    }
+
+    .container__image{
+        max-width: 100%;
+    }
+
+    .attribution{
+        margin-top: 5rem;
+    }
+}
+
